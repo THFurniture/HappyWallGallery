@@ -24,17 +24,19 @@ function collection(folder: string, artistName: string, files: string[]): Artwor
 export const artists: Artist[] = [
   {
     slug: "marzi",
-    name: "Marzi",
-    discipline: "Abstract Painting",
-    tagline: "Atmosphere held in suspension — skylines dissolved into gesture and light.",
+    name: "Marzi Fakhr",
+    discipline: "Visual Art — Vancouver",
+    tagline:
+      "Contemporary textured and abstract paintings that bring depth, movement, and character to interior spaces.",
     statement:
-      "I paint the moment a city stops being architecture and becomes weather.",
+      "Art should not only complement an interior but also create a lasting emotional connection and a sense of atmosphere.",
     bio: [
-      "Marzi builds her canvases the way fog builds over a harbour — in thin, patient layers of champagne gold, graphite, and bone white. From a distance her compositions read as skylines or shorelines; up close they dissolve into pure gesture, drips, and suspended pigment.",
-      "Her work has become a quiet signature of some of Vancouver's most considered interiors, where a single large-format piece is often asked to carry an entire room. Each painting is made to reward both the passing glance and the long, slow look.",
+      "Marzi Fakhr is an Iranian-Canadian visual artist based in Vancouver, BC. She holds a Bachelor's degree in Painting from Alzahra University in Tehran and has over twenty years of experience as a professional artist.",
+      "Marzi specializes in contemporary textured and abstract paintings, creating artworks that bring depth, movement, and character to interior spaces. Her process is driven by experimentation with layered textures, rich surfaces, and balanced compositions, resulting in pieces that feel both modern and timeless. Working primarily with acrylics and mixed media, she enjoys exploring different materials and techniques to create unique visual experiences. Every painting is thoughtfully handcrafted, with careful attention to texture, color harmony, and fine details.",
+      "In addition to her personal collections, Marzi creates custom artwork tailored to each client's vision and space. She believes that art should not only complement an interior but also create a lasting emotional connection and a sense of atmosphere.",
     ],
     cover: encodeURI("/ART/MARZI ART/9ntrzREA.jpg"),
-    works: collection("MARZI ART", "Marzi", [
+    works: collection("MARZI ART", "Marzi Fakhr", [
       "9ntrzREA.jpg",
       "KgV43vnw.jpg",
       "Maple Rd - 6120 (Richmond) - The One Staging - 36.jpg",
@@ -52,17 +54,19 @@ export const artists: Artist[] = [
   },
   {
     slug: "naser",
-    name: "Naser",
-    discipline: "Sculpture",
-    tagline: "Weight made weightless — quiet monoliths in stone and glass.",
+    name: "Naser Niki",
+    discipline: "Custom Glass-Work",
+    tagline:
+      "Architectural glass that blends traditional craftsmanship with innovative fabrication techniques.",
     statement:
-      "Stone already knows its form. My work is the patience of listening for it.",
+      "For more than three decades, Naser Niki has dedicated his career to advancing the art and technology of architectural glass.",
     bio: [
-      "Naser works at the meeting point of geology and stillness. His sculptures — carved stone, cast glass, and mineral forms that seem lifted straight from a riverbed — hold a room the way a pause holds a sentence.",
-      "Deliberately few in number, his pieces are placed rather than displayed: on a long console, at the end of a corridor, beneath a fall of natural light. Each one asks for space around it, and gives a kind of gravity back.",
+      "Naser Niki is a Canadian architectural glass artist, entrepreneur, and innovator best known as the Founder and Artistic Director of Studio G3 Glass, a British Columbia–based company specializing in custom architectural and decorative glass. He co-founded the company in 1996 with Johnny Tse, combining their expertise in art glass and graphic design to create one of North America's leading specialty glass manufacturers.",
+      "For more than three decades, Naser Niki has dedicated his career to advancing the art and technology of architectural glass. His work blends traditional craftsmanship with innovative fabrication techniques, producing large-scale textured, kiln-formed, sand-carved, etched, and decorative glass installations for luxury residential, commercial, hospitality, and institutional projects worldwide.",
+      "One of Niki's most recognized achievements was leading the creation of the custom textured glass cladding for the 2010 Vancouver Olympic Cauldron.",
     ],
     cover: encodeURI("/ART/NASER ART/DSC02744.jpg"),
-    works: collection("NASER ART", "Naser", [
+    works: collection("NASER ART", "Naser Niki", [
       "DSC02744.jpg",
       "Cambie St - 885 (2500) (Vancouver) - The One Staging - 38.jpg",
       "W Georgia St - 1128 (4903) (Vancouver) - The One Staging - 3.jpg",
@@ -70,17 +74,19 @@ export const artists: Artist[] = [
   },
   {
     slug: "noemi",
-    name: "Noemi",
-    discipline: "Contemporary Landscape",
-    tagline: "Where the sea meets memory — horizons in muted, breathing colour.",
+    name: "Noemi Kozikowska",
+    discipline: "Visual Art — Vancouver",
+    tagline:
+      "Exploring colour and texture through the lens of the psychic undertows that influence everyday existence.",
     statement:
-      "A horizon is the most honest line there is. Everything I paint begins there.",
+      "Exploring colour and texture through the lens of the psychic undertows that underlie and influence everyday existence.",
     bio: [
-      "Noemi paints the coastline the way it is remembered rather than the way it is photographed — long horizontals of sea, sky, and shore softened into fields of grey-blue, sand, and mist. Her canvases carry the particular calm of the Pacific Northwest.",
-      "The most collected artist in the gallery, Noemi's work spans intimate panels to room-width panoramas. Her paintings have found homes across Vancouver, Richmond, and West Vancouver, where they do what the ocean does: quietly hold everyone's attention.",
+      "Noemi Kozikowska is an artist working and living in the Lower Mainland of B.C. Born in Poland, since early childhood she has focused her time and energy on art creation, and on developing various skills pertaining to this practice. She earned her Bachelor of Fine Arts degree at Simon Fraser University, majoring in both Fine Arts and Humanities.",
+      "For the past decade she has engaged her personal art practice alongside various professional decorative art practices. During this time, she has had the privilege of learning and mastering various art practices — some of which are now almost obsolete — from some of the best in the field.",
+      "Kozikowska's personal artistic practice revolves around exploring colour and texture through the lens of the psychic undertows that underlie and influence everyday existence. As a professional fine and decorative artist, she has trained herself to work in a large variety of styles and mediums.",
     ],
     cover: encodeURI("/ART/NOEMI ART/DSC02737.jpg"),
-    works: collection("NOEMI ART", "Noemi", [
+    works: collection("NOEMI ART", "Noemi Kozikowska", [
       "DSC02737.jpg",
       "5hZj5IJQ.jpg",
       "7mexQghA.jpg",
@@ -115,17 +121,18 @@ export const artists: Artist[] = [
   },
   {
     slug: "ronan",
-    name: "Ronan",
-    discipline: "Mixed Media",
-    tagline: "Surfaces that hold light — gold leaf, resin, and raw texture.",
+    name: "Ronan Boyle",
+    discipline: "Visual Art — Vancouver",
+    tagline:
+      "An edgy street aesthetic with a clear sophistication, rooted in '60s Pop and New York punk DIY.",
     statement:
-      "I want a surface you feel across the room before you ever step closer.",
+      "His main inspirations stem from the Pop movement of the '60s and the Do-It-Yourself movement of New York's punk scene.",
     bio: [
-      "Ronan builds paintings the way tide pools build sediment — resin over pigment over gold leaf, sanded back and layered again until the surface itself becomes the subject. His panels shift with the hour, catching morning light one way and lamplight another.",
-      "Physical, material, and unapologetically tactile, his work anchors double-height foyers and quiet bedrooms alike. Every piece is a record of accumulation: what was buried, what was uncovered, and what was allowed to shine through.",
+      "Ronan Boyle was born in Derry, Northern Ireland and came to Canada as a child in 1974. Drawing, painting, and scouting since childhood, he is a self-taught artist.",
+      "His main inspirations stem from the Pop movement of the '60s and the Do-It-Yourself movement of New York's punk scene in the late '70s and early '80s. His work has an edgy street aesthetic with a clear sophistication.",
     ],
     cover: encodeURI("/ART/RONAN ART/DSC04271.jpg"),
-    works: collection("RONAN ART", "Ronan", [
+    works: collection("RONAN ART", "Ronan Boyle", [
       "DSC04253.jpg",
       "DSC04271.jpg",
       "DSC04313.jpg",
