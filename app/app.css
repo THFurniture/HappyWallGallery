@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  --color-cream: #f6f3ed;
+  --color-parchment: #ede8dd;
+  --color-ink: #1b1a17;
+  --color-soft: #6e6a61;
+  --color-line: #ddd6c8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  @apply bg-cream font-sans text-ink antialiased;
+}
+
+::selection {
+  @apply bg-ink text-cream;
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marketing Site From MD"
+  short_description: "Generate marketing sites from markdown briefs"
+  default_prompt: "Use $marketing-site-from-md to turn a site-information markdown file into a route-and-feature-based marketing site with local hardcoded content."
