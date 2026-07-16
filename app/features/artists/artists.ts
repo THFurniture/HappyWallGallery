@@ -10,6 +10,7 @@ export type Artist = {
   tagline: string;
   statement: string;
   bio: string[];
+  profileIllustration: string;
   cover: string;
   works: Artwork[];
 };
@@ -35,6 +36,7 @@ export const artists: Artist[] = [
       "Marzi specializes in contemporary textured and abstract paintings, creating artworks that bring depth, movement, and character to interior spaces. Her process is driven by experimentation with layered textures, rich surfaces, and balanced compositions, resulting in pieces that feel both modern and timeless. Working primarily with acrylics and mixed media, she enjoys exploring different materials and techniques to create unique visual experiences. Every painting is thoughtfully handcrafted, with careful attention to texture, color harmony, and fine details.",
       "In addition to her personal collections, Marzi creates custom artwork tailored to each client's vision and space. She believes that art should not only complement an interior but also create a lasting emotional connection and a sense of atmosphere.",
     ],
+    profileIllustration: encodeURI("/ART/MARZI ART/MARZI-Photoroom.png"),
     cover: encodeURI("/ART/MARZI ART/9ntrzREA.jpg"),
     works: collection("MARZI ART", "Marzi Fakhr", [
       "9ntrzREA.jpg",
@@ -65,6 +67,7 @@ export const artists: Artist[] = [
       "For more than three decades, Naser Niki has dedicated his career to advancing the art and technology of architectural glass. His work blends traditional craftsmanship with innovative fabrication techniques, producing large-scale textured, kiln-formed, sand-carved, etched, and decorative glass installations for luxury residential, commercial, hospitality, and institutional projects worldwide.",
       "One of Niki's most recognized achievements was leading the creation of the custom textured glass cladding for the 2010 Vancouver Olympic Cauldron.",
     ],
+    profileIllustration: encodeURI("/ART/NASER ART/NASER-Photoroom.png"),
     cover: encodeURI("/ART/NASER ART/DSC02744.jpg"),
     works: collection("NASER ART", "Naser Niki", [
       "DSC02744.jpg",
@@ -85,6 +88,7 @@ export const artists: Artist[] = [
       "For the past decade she has engaged her personal art practice alongside various professional decorative art practices. During this time, she has had the privilege of learning and mastering various art practices — some of which are now almost obsolete — from some of the best in the field.",
       "Kozikowska's personal artistic practice revolves around exploring colour and texture through the lens of the psychic undertows that underlie and influence everyday existence. As a professional fine and decorative artist, she has trained herself to work in a large variety of styles and mediums.",
     ],
+    profileIllustration: encodeURI("/ART/NOEMI ART/NOEMI-Photoroom.png"),
     cover: encodeURI("/ART/NOEMI ART/DSC02737.jpg"),
     works: collection("NOEMI ART", "Noemi Kozikowska", [
       "DSC02737.jpg",
@@ -131,6 +135,7 @@ export const artists: Artist[] = [
       "Ronan Boyle was born in Derry, Northern Ireland and came to Canada as a child in 1974. Drawing, painting, and scouting since childhood, he is a self-taught artist.",
       "His main inspirations stem from the Pop movement of the '60s and the Do-It-Yourself movement of New York's punk scene in the late '70s and early '80s. His work has an edgy street aesthetic with a clear sophistication.",
     ],
+    profileIllustration: encodeURI("/ART/RONAN ART/RONAN-Photoroom.png"),
     cover: encodeURI("/ART/RONAN ART/DSC04271.jpg"),
     works: collection("RONAN ART", "Ronan Boyle", [
       "DSC04253.jpg",

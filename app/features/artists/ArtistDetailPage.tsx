@@ -9,18 +9,30 @@ export function ArtistDetailPage({ artist }: { artist: Artist }) {
     <main className="pt-36 md:pt-44">
       {/* Intro */}
       <header className="mx-auto max-w-7xl px-6 md:px-10">
-        <Reveal>
-          <Link
-            to="/artists"
-            className="text-xs font-medium uppercase tracking-[0.25em] text-soft transition-colors hover:text-ink"
-          >
-            ← All artists
-          </Link>
-          <p className="mt-10 text-xs font-medium uppercase tracking-[0.3em] text-soft">
-            {artist.discipline}
-          </p>
-          <h1 className="mt-4 font-display text-6xl leading-none md:text-8xl">{artist.name}</h1>
-        </Reveal>
+        <div className="grid items-end gap-12 md:grid-cols-[7fr_5fr] md:gap-16">
+          <Reveal>
+            <Link
+              to="/artists"
+              className="text-xs font-medium uppercase tracking-[0.25em] text-soft transition-colors hover:text-ink"
+            >
+              ← All artists
+            </Link>
+            <p className="mt-10 text-xs font-medium uppercase tracking-[0.3em] text-soft">
+              {artist.discipline}
+            </p>
+            <h1 className="mt-4 font-display text-6xl leading-none md:text-8xl">{artist.name}</h1>
+          </Reveal>
+
+          <Reveal delay={0.12}>
+            <figure className="mx-auto flex aspect-square w-full max-w-[22rem] items-end justify-center sm:max-w-[26rem] md:ml-auto md:mr-0">
+              <img
+                src={artist.profileIllustration}
+                alt={`Line art profile illustration of ${artist.name}`}
+                className="h-full w-full object-contain p-6"
+              />
+            </figure>
+          </Reveal>
+        </div>
       </header>
 
       {/* Bio */}
