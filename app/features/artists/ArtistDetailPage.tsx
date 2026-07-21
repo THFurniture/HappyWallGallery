@@ -70,13 +70,13 @@ export function ArtistDetailPage({ artist }: { artist: Artist }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-48px" }}
                 transition={{ duration: 0.7, delay: (i % 3) * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="break-inside-avoid overflow-hidden bg-cream"
+                className="break-inside-avoid overflow-hidden"
               >
                 <img
                   src={work.src}
                   alt={work.alt}
                   loading="lazy"
-                  className="w-full transition-transform duration-700 ease-out hover:scale-[1.03]"
+                  className="w-full object-contain transition-transform duration-700 ease-out hover:scale-[1.03]"
                 />
               </motion.figure>
             ))}

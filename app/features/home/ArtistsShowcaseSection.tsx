@@ -25,7 +25,7 @@ export function ArtistsShowcaseSection() {
             transition={{ duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
           >
             <Link to={`/artists/${artist.slug}`} className="group block">
-              <div className="overflow-hidden bg-parchment">
+              <div className="overflow-hidden">
                 <img
                   src={artist.cover}
                   alt={`Work by ${artist.name}`}

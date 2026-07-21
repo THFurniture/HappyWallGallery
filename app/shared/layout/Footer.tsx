@@ -10,7 +10,7 @@ export function Footer() {
           <img
             src="/logo.png"
             alt="Happy Wall Gallery"
-            className="h-28 w-auto invert mix-blend-screen"
+            className="h-28 w-auto object-contain invert mix-blend-screen"
           />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-cream/60">
             A contemporary art gallery showcasing unique works that connect, provoke, and inspire.

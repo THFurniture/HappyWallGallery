@@ -28,7 +28,7 @@ export function ArtistsPage() {
                 i % 2 === 1 ? "md:[&>*:first-child]:order-2" : "",
               ].join(" ")}
             >
-              <div className="overflow-hidden bg-parchment">
+              <div className="overflow-hidden">
                 <img
                   src={artist.cover}
                   alt={`Work by ${artist.name}`}

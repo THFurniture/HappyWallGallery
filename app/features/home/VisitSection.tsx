@@ -1,7 +1,7 @@
 import { Reveal } from "../../shared/ui/Reveal";
 import { ArrowLink } from "../../shared/ui/ArrowLink";
 
-const visitImage = encodeURI("/ART/NOEMI ART/DSC02737.jpg");
+const visitImage = encodeURI("/ART/NOEMI ART/noemi-soft-beach-horizon.png");
 
 export function VisitSection() {
   return (
