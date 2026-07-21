@@ -88,7 +88,7 @@ export const artists: Artist[] = [
       "Kozikowska's personal artistic practice revolves around exploring colour and texture through the lens of the psychic undertows that underlie and influence everyday existence. As a professional fine and decorative artist, she has trained herself to work in a large variety of styles and mediums.",
     ],
     profileIllustration: encodeURI("/ART/NOEMI ART/NOEMI-Photoroom.png"),
-    cover: encodeURI("/ART/NOEMI ART/noemi-aqua-wave-texture.png"),
+    cover: encodeURI("/ART/NOEMI ART/noemi-coastal-posts.png"),
     works: collection("NOEMI ART", "Noemi Kozikowska", [
       "noemi-aqua-wave-texture.png",
       "noemi-coastal-posts.png",
