@@ -37,7 +37,7 @@ export const artists: Artist[] = [
       "In addition to her personal collections, Marzi creates custom artwork tailored to each client's vision and space. She believes that art should not only complement an interior but also create a lasting emotional connection and a sense of atmosphere.",
     ],
     profileIllustration: encodeURI("/ART/MARZI ART/MARZI-Photoroom.png"),
-    cover: encodeURI("/ART/MARZI ART/marzi-gold-botanical-canopy.png"),
+    cover: encodeURI("/ART/MARZI ART/marzi-gold-botanical-canopy-full.png"),
     works: collection("MARZI ART", "Marzi Fakhr", [
       "marzi-gold-botanical-canopy.png",
       "marzi-gold-burst.png",
@@ -67,7 +67,7 @@ export const artists: Artist[] = [
       "One of Niki's most recognized achievements was leading the creation of the custom textured glass cladding for the 2010 Vancouver Olympic Cauldron.",
     ],
     profileIllustration: encodeURI("/ART/NASER ART/NASER-Photoroom.png"),
-    cover: encodeURI("/ART/NASER ART/naser-textured-glass-panel.png"),
+    cover: encodeURI("/ART/NASER ART/naser-textured-glass-panel-full.png"),
     works: collection("NASER ART", "Naser Niki", [
       "naser-textured-glass-panel.png",
       "naser-etched-glass-screen.png",
@@ -88,7 +88,7 @@ export const artists: Artist[] = [
       "Kozikowska's personal artistic practice revolves around exploring colour and texture through the lens of the psychic undertows that underlie and influence everyday existence. As a professional fine and decorative artist, she has trained herself to work in a large variety of styles and mediums.",
     ],
     profileIllustration: encodeURI("/ART/NOEMI ART/NOEMI-Photoroom.png"),
-    cover: encodeURI("/ART/NOEMI ART/noemi-coastal-posts.png"),
+    cover: encodeURI("/ART/NOEMI ART/noemi-coastal-posts-full.png"),
     works: collection("NOEMI ART", "Noemi Kozikowska", [
       "noemi-aqua-wave-texture.png",
       "noemi-coastal-posts.png",
@@ -132,7 +132,7 @@ export const artists: Artist[] = [
       "His main inspirations stem from the Pop movement of the '60s and the Do-It-Yourself movement of New York's punk scene in the late '70s and early '80s. His work has an edgy street aesthetic with a clear sophistication.",
     ],
     profileIllustration: encodeURI("/ART/RONAN ART/RONAN-Photoroom.png"),
-    cover: encodeURI("/ART/RONAN ART/ronan-aqua-storm-break.png"),
+    cover: encodeURI("/ART/RONAN ART/ronan-aqua-storm-break-full.png"),
     works: collection("RONAN ART", "Ronan Boyle", [
       "ronan-gold-horizon-field.png",
       "ronan-ochre-mist-vertical.png",

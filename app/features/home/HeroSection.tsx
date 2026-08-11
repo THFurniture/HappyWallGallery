@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowLink } from "../../shared/ui/ArrowLink";
 
-const heroImage = encodeURI("/ART/RONAN ART/ronan-aqua-storm-break.png");
+const heroImage = encodeURI("/ART/RONAN ART/ronan-blue-gold-wave-full.png");
 
 const rise = {
   initial: { opacity: 0, y: 32 },
@@ -11,14 +11,18 @@ const rise = {
 export function HeroSection() {
   return (
     <section className="relative flex min-h-svh items-center overflow-hidden">
-      <motion.img
-        src={heroImage}
-        alt="Aqua and gold abstract work by Ronan"
-        className="absolute inset-0 h-full w-full object-cover"
+      <motion.div
+        className="absolute inset-0"
         initial={{ scale: 1.08, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
-      />
+      >
+        <img
+          src={heroImage}
+          alt="Aqua and gold abstract work by Ronan"
+          className="h-full w-full object-cover"
+        />
+      </motion.div>
       <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/70 to-transparent" />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 pt-28 md:px-10">

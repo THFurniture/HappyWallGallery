@@ -25,12 +25,12 @@ export function ArtistsShowcaseSection() {
             transition={{ duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
           >
             <Link to={`/artists/${artist.slug}`} className="group block">
-              <div className="overflow-hidden">
+              <div className="aspect-[3/4] w-full overflow-hidden">
                 <img
                   src={artist.cover}
                   alt={`Work by ${artist.name}`}
                   loading="lazy"
-                  className="aspect-[3/4] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
               <p className="mt-5 text-xs font-medium uppercase tracking-[0.3em] text-soft">
