@@ -2,7 +2,7 @@ import { HomePage } from "../features/home/HomePage";
 
 export function meta() {
   return [
-    { title: "Happy Wall Gallery — Art that inspires" },
+    { title: "Happy Wall Gallery — Custom Art that inspires" },
     {
       name: "description",
       content:

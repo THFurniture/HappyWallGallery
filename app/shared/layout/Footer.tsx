@@ -56,7 +56,7 @@ export function Footer() {
       <div className="border-t border-cream/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6 text-xs tracking-widest text-cream/40 md:flex-row md:items-center md:justify-between md:px-10">
           <p>© {new Date().getFullYear()} Happy Wall Gallery. All rights reserved.</p>
-          <p>Art that inspires.</p>
+          <p>Custom Art that inspires.</p>
         </div>
       </div>
     </footer>
