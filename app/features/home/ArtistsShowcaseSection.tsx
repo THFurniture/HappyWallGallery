@@ -4,6 +4,12 @@ import { artists } from "../artists/artists";
 import { ArrowLink } from "../../shared/ui/ArrowLink";
 import { Reveal } from "../../shared/ui/Reveal";
 
+/** Per-artist image overrides for the home showcase (leaves each artist's global cover untouched). */
+const showcaseCoverOverrides: Record<string, string> = {
+  noemi: encodeURI("/ART/NOEMI ART/noemi-blue-gold-patina.png"),
+  ronan: encodeURI("/ART/RONAN ART/ronan-green-black-current.png"),
+};
+
 export function ArtistsShowcaseSection() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24 md:px-10 md:py-32">
@@ -27,10 +33,10 @@ export function ArtistsShowcaseSection() {
             <Link to={`/artists/${artist.slug}`} className="group block">
               <div className="aspect-[3/4] w-full overflow-hidden">
                 <img
-                  src={artist.cover}
+                  src={showcaseCoverOverrides[artist.slug] ?? artist.cover}
                   alt={`Work by ${artist.name}`}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
                 />
               </div>
               <p className="mt-5 text-xs font-medium uppercase tracking-[0.3em] text-soft">

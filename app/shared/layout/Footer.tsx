@@ -44,12 +44,20 @@ export function Footer() {
             </li>
             <li>By appointment, Tuesday – Saturday</li>
           </ul>
-          <Link
-            to="/contact"
-            className="mt-8 inline-block border-b border-cream/40 pb-1 text-xs font-medium uppercase tracking-[0.25em] text-cream transition-colors hover:border-cream"
-          >
-            Plan your visit
-          </Link>
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+            <Link
+              to="/get-inspired"
+              className="inline-block border-b border-cream/40 pb-1 text-xs font-medium uppercase tracking-[0.25em] text-cream transition-colors hover:border-cream"
+            >
+              Get inspired
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-block border-b border-cream/40 pb-1 text-xs font-medium uppercase tracking-[0.25em] text-cream transition-colors hover:border-cream"
+            >
+              Plan your visit
+            </Link>
+          </div>
         </div>
       </div>
 

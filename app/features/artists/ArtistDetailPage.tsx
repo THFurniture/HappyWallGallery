@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import { Reveal } from "../../shared/ui/Reveal";
 import { ArrowLink } from "../../shared/ui/ArrowLink";
+import { Lightbox } from "../../shared/ui/Lightbox";
 import type { Artist } from "./artists";
 
 export function ArtistDetailPage({ artist }: { artist: Artist }) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
   return (
     <main className="pt-36 md:pt-44">
       {/* Intro */}
@@ -70,19 +74,41 @@ export function ArtistDetailPage({ artist }: { artist: Artist }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-48px" }}
                 transition={{ duration: 0.7, delay: (i % 3) * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="break-inside-avoid overflow-hidden"
+                className="break-inside-avoid"
               >
-                <img
-                  src={work.src}
-                  alt={work.alt}
-                  loading="lazy"
-                  className="w-full object-contain transition-transform duration-700 ease-out hover:scale-[1.03]"
-                />
+                <button
+                  type="button"
+                  onClick={() => setActiveIndex(i)}
+                  aria-label={`View ${work.alt} enlarged`}
+                  className="group relative block w-full cursor-zoom-in overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
+                >
+                  <img
+                    src={work.src}
+                    alt={work.alt}
+                    loading="lazy"
+                    className="w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  />
+                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-ink/0 opacity-0 transition-all duration-500 group-hover:bg-ink/20 group-hover:opacity-100">
+                    <span className="grid h-12 w-12 place-items-center rounded-full bg-cream/90 text-ink shadow-lg">
+                      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.5">
+                        <circle cx="11" cy="11" r="7" />
+                        <path strokeLinecap="round" d="M16.5 16.5L21 21M11 8v6M8 11h6" />
+                      </svg>
+                    </span>
+                  </span>
+                </button>
               </motion.figure>
             ))}
           </div>
         </div>
       </section>
+
+      <Lightbox
+        works={artist.works}
+        index={activeIndex}
+        onClose={() => setActiveIndex(null)}
+        onNavigate={setActiveIndex}
+      />
 
       {/* CTA */}
       <section className="mx-auto max-w-4xl px-6 py-24 text-center md:py-32">

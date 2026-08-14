@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useScroll, useMotionValueEvent } from "motion/
 const leftLinks = [
   { to: "/", label: "Home" },
   { to: "/artists", label: "Artists" },
+  { to: "/get-inspired", label: "Get Inspired" },
 ];
 
 const rightLinks = [{ to: "/contact", label: "Contact" }];

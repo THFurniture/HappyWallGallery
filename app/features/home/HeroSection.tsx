@@ -32,9 +32,9 @@ export function HeroSection() {
             transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-6xl leading-[1.05] md:text-8xl"
           >
-            Art that
+            Custom Art
             <br />
-            inspires.
+            that inspires.
           </motion.h1>
           <motion.p
             {...rise}

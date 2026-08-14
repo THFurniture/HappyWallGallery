@@ -4,5 +4,6 @@ export default [
   index("routes/home.tsx"),
   route("artists", "routes/artists.tsx"),
   route("artists/:slug", "routes/artist.tsx"),
+  route("get-inspired", "routes/inspired.tsx"),
   route("contact", "routes/contact.tsx"),
 ] satisfies RouteConfig;
