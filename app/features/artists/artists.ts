@@ -67,11 +67,9 @@ export const artists: Artist[] = [
       "One of Niki's most recognized achievements was leading the creation of the custom textured glass cladding for the 2010 Vancouver Olympic Cauldron.",
     ],
     profileIllustration: encodeURI("/ART/NASER ART/NASER-Photoroom.png"),
-    cover: encodeURI("/ART/NASER ART/naser-textured-glass-panel-full.png"),
+    cover: encodeURI("/ART/NASER ART/naser-etched-glass-screen.png"),
     works: collection("NASER ART", "Naser Niki", [
-      "naser-textured-glass-panel.png",
       "naser-etched-glass-screen.png",
-      "naser-architectural-glass-relief.png",
     ]),
   },
   {
