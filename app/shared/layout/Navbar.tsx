@@ -64,10 +64,7 @@ export function Navbar() {
           <img
             src="/logo.png"
             alt="Happy Wall Gallery"
-            className={[
-              "w-auto object-contain mix-blend-multiply transition-all duration-500",
-              scrolled ? "h-14" : "h-20 md:h-24",
-            ].join(" ")}
+            className="h-20 w-auto object-contain mix-blend-multiply transition-all duration-500 md:h-24"
           />
         </Link>
 

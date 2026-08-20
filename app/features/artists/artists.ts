@@ -22,7 +22,7 @@ function collection(folder: string, artistName: string, files: string[]): Artwor
   }));
 }
 
-export const artists: Artist[] = [
+const artistRecords: Artist[] = [
   {
     slug: "marzi",
     name: "Marzi Fakhr",
@@ -37,7 +37,7 @@ export const artists: Artist[] = [
       "In addition to her personal collections, Marzi creates custom artwork tailored to each client's vision and space. She believes that art should not only complement an interior but also create a lasting emotional connection and a sense of atmosphere.",
     ],
     profileIllustration: encodeURI("/ART/MARZI ART/MARZI-Photoroom.png"),
-    cover: encodeURI("/ART/MARZI ART/marzi-gold-botanical-canopy-full.png"),
+    cover: encodeURI("/ART/MARZI ART/marzi-gold-floral-study.png"),
     works: collection("MARZI ART", "Marzi Fakhr", [
       "marzi-gold-botanical-canopy.png",
       "marzi-gold-burst.png",
@@ -149,6 +149,18 @@ export const artists: Artist[] = [
     ]),
   },
 ];
+
+const artistDisplayOrder = ["noemi", "ronan", "marzi", "naser"];
+
+export const artists: Artist[] = artistDisplayOrder.map((slug) => {
+  const artist = artistRecords.find((record) => record.slug === slug);
+
+  if (!artist) {
+    throw new Error(`Missing artist record for ${slug}`);
+  }
+
+  return artist;
+});
 
 export function getArtist(slug: string | undefined): Artist | undefined {
   return artists.find((artist) => artist.slug === slug);

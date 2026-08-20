@@ -6,8 +6,9 @@ import { Reveal } from "../../shared/ui/Reveal";
 
 /** Per-artist image overrides for the home showcase (leaves each artist's global cover untouched). */
 const showcaseCoverOverrides: Record<string, string> = {
-  noemi: encodeURI("/ART/NOEMI ART/noemi-blue-gold-patina.png"),
-  ronan: encodeURI("/ART/RONAN ART/ronan-green-black-current.png"),
+  noemi: encodeURI("/ART/NOEMI ART/noemi-muted-coastal-expanse.png"),
+  ronan: encodeURI("/ART/RONAN ART/ronan-soft-mountain-haze.png"),
+  marzi: encodeURI("/ART/MARZI ART/marzi-gold-floral-study.png"),
 };
 
 export function ArtistsShowcaseSection() {
